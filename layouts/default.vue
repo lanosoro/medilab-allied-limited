@@ -9,7 +9,7 @@
         <h3>
           About Us
         </h3>
-        <p>
+        <p style="padding-top:30px">
                Medilab & Allied 
 Products K Ltd is a 
 Kenyan company, 
@@ -190,7 +190,7 @@ footer .container .sec.aboutus {
 
   background: white;
   height: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
   box-sizing: border-box;
   width: 100px;
 }
@@ -206,7 +206,7 @@ footer .container .sec.aboutus {
   border-radius: 50%;
   color: white;
   text-decoration: none;
-  margin-right: 35px;
+  margin-right: 30px;
   transition: all 1s ease;
 }
 .sci li a:hover {
@@ -228,10 +228,10 @@ footer .container .sec.aboutus {
   list-style: none;
 }
 footer .container .links {
-  width: 25%;
-  position: relative;
-  color: white;
-  display: block;
+    width: 170px;
+    position: relative;
+    color: white;
+    display: block;
 }
 .links ul li {
   text-decoration: none;
@@ -247,7 +247,7 @@ footer .container .links {
   word-spacing: 0.2em;
 }
 .links ul li:hover {
-  font-weight: 600;
+ 
   font-size: 19px;
 }
 .links h3::before {
@@ -255,7 +255,7 @@ footer .container .links {
   position: absolute;
   background: white;
   height: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
   box-sizing: border-box;
   width: 100px;
 }
@@ -279,7 +279,7 @@ footer .container .links {
   position: absolute;
   background: white;
   height: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
   box-sizing: border-box;
   width: 100px;
 }
@@ -341,11 +341,50 @@ footer .container .links {
     position: relative;
     width: 50vw;
   }
+  footer .container .sec.aboutus p{
+  width: 500px;
+}
+footer .container .links {
+    width: 170px;
+    position: relative;
+    color: white;
+    display: block;
+}
 }
 @media screen and (max-width: 600px) {
 
 footer .container .sec.aboutus p{
   width: 300px;
+}
+footer .container .links {
+    width: 170px;
+    position: relative;
+    color: white;
+    display: block;
+}
+.sci li {
+  list-style: none;
+  position: relative;
+  left: -8.7;
+}
+.sci li a {
+  display: inline-block;
+  width: 40px;
+
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+ 
+  transition: all 1s ease;
+}
+footer .container .sec.aboutus p {
+    width: 200px;
+    flex-wrap: wrap;
 }
 }
 </style>

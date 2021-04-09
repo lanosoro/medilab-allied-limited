@@ -1,11 +1,11 @@
 <template>
   <header>
       <nav>
-         <a class="logo" href="#"><img class="img" src="..\assets\logo-medilab-removebg-preview.png" alt=""></a>
+         <a class="logo" href="/"><img class="img" src="..\assets\logo-medilab-removebg-preview.png" alt=""></a>
          <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/products">Products</a></li>
-            <li><a href="#">contact us </a></li>
+            <li><a href="/contactus">contact us </a></li>
             <li><a href="/about">about us </a></li>
    
             
@@ -141,15 +141,13 @@ header ul{
   transform: translateY(7px);
   color: white;
 }
-@media  (max-width:761px) {
-    
-header ul{
-    display: none;
+@media  (max-width:861px) {
+header nav ul li[data-v-a44f70d2] {
+    list-style: none;
     position: relative;
-    align-items: center;
-    justify-content: center;
-
+    display: none;
 }
+
 .logo{
     position: relative;
     left: -100px;
@@ -158,11 +156,108 @@ header ul{
 .img{
     height: 60px;
 }
+.hamburger-menu-container {
+  flex: 1;
+  z-index: 100000;
+
+  display:block;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+  margin-top: -90px;
+}
+
+.hamburger-menu div {
+  width: 1.6rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #69bde7;
+  position: relative;
+  z-index: 1001;
+  transition: 0.5s;
+}
+
+.hamburger-menu div:before,
+.hamburger-menu div:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: black;
+  z-index: 20000;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.hamburger-menu div:before {
+  transform: translateY(-7px);
+}
+
+.hamburger-menu div:after {
+  transform: translateY(7px);
+  color: white;
+}
 }
 @media (max-width:991) {
     .image{
         display: none;
     }
+    .hamburger-menu-container {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+  margin-top: -90px;
+}
+
+.hamburger-menu div {
+  width: 1.6rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #69bde7;
+  position: relative;
+  z-index: 1001;
+  transition: 0.5s;
+}
+
+.hamburger-menu div:before,
+.hamburger-menu div:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: black;
+  z-index: 20000;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.hamburger-menu div:before {
+  transform: translateY(-7px);
+}
+
+.hamburger-menu div:after {
+  transform: translateY(7px);
+  color: white;
+}
 }
 
 </style>
